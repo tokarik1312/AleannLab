@@ -32,7 +32,6 @@ function Job(props) {
 
 
   return (
-
     <div className={styles.job}>
       <div className={styles.text}>
         <div className={styles.image}>
@@ -55,7 +54,6 @@ function Job(props) {
           activeColor="#ffd700"
         />
       </div>
-
       <div className={styles.block2}>
         <div className={styles.icon}>
           <i className="bi bi-bookmark fs-3" id='one'></i>
@@ -63,7 +61,6 @@ function Job(props) {
         <div className={styles.date}>Posted {moment(props.createdAt).fromNow()}</div>
       </div>
     </div>
-
   );
 }
 
