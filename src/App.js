@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import JobList from './components/Job-list/Job-list';
 import Details from './components/Details/Details'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import { HashRouter as Router, Routes, Route } from 'react-router-dom'
 
 function App() {
 
