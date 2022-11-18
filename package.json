@@ -2,6 +2,7 @@
   "name": "aleannlab-app",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://tokarik1312.github.io/AleannLab/",
   "dependencies": {
     "@react-google-maps/api": "^2.17.0",
     "@testing-library/jest-dom": "^5.16.5",
