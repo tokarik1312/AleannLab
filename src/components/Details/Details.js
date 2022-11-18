@@ -50,17 +50,6 @@ function Details(props) {
 
 
 
-  console.log(data)
-
-
-
-
-
-
-
-
-
-
   function toJobBoard() {
     localStorage.clear()
   }
@@ -71,7 +60,6 @@ function Details(props) {
       <div className="mb-5 mt-5 container-xxl">
         <div className="row">
           <div className="col-sm-12 col-md-8 fs-3">
-
             <nav className="navbar border-bottom">
               <div className="container-fluid justify-content-between">
                 <p className="job_details">Job Details</p>
@@ -87,10 +75,8 @@ function Details(props) {
                 </div>
               </div>
             </nav>
-
             <nav className="navbar mt-5 block_sm">
               <div className="container-fluid justify-content-between">
-
                 <div className="d-flex justify-content-between align-items-center">
                   <div className="save_to_my_list d-flex">
                     <div className=""><i className="bi bi-star fs-3" id='one'></i></div>
@@ -103,14 +89,9 @@ function Details(props) {
                 </div>
               </div>
             </nav>
-
-
             <div className="mt-5">
               <button type="button" className="btn btn-dark mybtn mybtn1">APPLY NOW</button>
             </div>
-
-
-
             <div className="row d-flex mt-5">
               <div className="col-sm-8 col-lg-10">
                 <div className="title">{data.title}</div>
@@ -121,24 +102,18 @@ function Details(props) {
                 <div className="moneyText">Brutto, per year</div>
               </div>
             </div>
-
             <div className="mt-5">
               {data.description}
             </div>
-
             <div className="mt-5 mybtn2">
               <button type="button" className="btn btn-dark mybtn">APPLY NOW</button>
             </div>
-
-
-
             <div className="d-flex flex-column">
               <nav className="navbar border-bottom" style={{ marginTop: '100px' }}>
                 <div className="container-fluid justify-content-between">
                   <p className="job_details">Additional info</p>
                 </div>
               </nav>
-
               <div className="row">
                 <div>
                   <p className="mt-3">Employment type</p>
@@ -153,44 +128,30 @@ function Details(props) {
                   </div>
                 </div>
               </div>
-
-
               <nav className="navbar border-bottom" style={{ marginTop: '100px' }}>
                 <div className="container-fluid justify-content-between">
                   <p className="job_details">Attached images</p>
                 </div>
               </nav>
-
               <div className="d-flex">
                 {images}
               </div>
             </div>
-
-
-
-
           </div>
-
           <div className="col-sm-12 col-md-4 d-flex flex-column">
-
             <nav className="navbar border-bottom mb-5 contacts" style={{ marginTop: '100px' }}>
               <div className="container-fluid justify-content-between">
                 <p className="job_details">Contacts</p>
               </div>
             </nav>
-
             <div className="map">
               <div className="map-text ">
-
                 <div className="text">
                   <div className="text1">
                     <p>Name: {data.name}.</p>
-                  
-                  
-                   
                   </div>
                   <div className="text2 d-flex mt-4">
-                    <i className="bi bi-geo-alt-fill"></i> 
+                    <i className="bi bi-geo-alt-fill"></i>
                     <div className="ms-2">{data.address}</div>
                   </div>
                   <div className="text3 mt-3">
@@ -198,12 +159,8 @@ function Details(props) {
                     <div>{data.email}</div>
                   </div>
                 </div>
-
-
                 <div className="round"></div>
-
               </div>
-
               <div className="google-map">
                 <GoogleMapReact
                   bootstrapURLKeys={{ key: "AIzaSyDgtYJYbADlpQFcZlAh12HBTKh7RpUJ5OA" }}
@@ -217,14 +174,9 @@ function Details(props) {
                   />
                 </GoogleMapReact>
               </div>
-
             </div>
-
           </div>
-
-
         </div >
-
       </div >
       <div className="return">
         <Link style={{ textDecoration: "none" }} to={{ pathname: "/" }}>
@@ -235,7 +187,6 @@ function Details(props) {
         </Link>
       </div>
     </div>
-
   )
 
 }

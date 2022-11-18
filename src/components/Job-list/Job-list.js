@@ -36,15 +36,12 @@ function JobList(props) {
   }, [])
 
 
-console.log(jobs)
-
   const pageCount = Math.ceil(jobs.length / usersPerPage);
 
 
   function handlePageClick(page) {
     setPageNumber(page.selected)
   }
-
 
 
   if (error) {
